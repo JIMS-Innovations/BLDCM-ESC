@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.includePath": [
+        "/opt/local/avr/include"
+    ],
+    "files.associations": {
+        "interrupt.h": "c",
+        "io.h": "c"
+    }
+}
