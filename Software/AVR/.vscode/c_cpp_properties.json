@@ -4,7 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "/opt/local/avr/include",
-                "/Users/ayokupoluyi/Desktop/Jesutofunmi/Final Year Project/Software/AVR/includes"
+                "/Users/ayokupoluyi/Desktop/Jesutofunmi/Final Year Project/Project (2023)/Software/AVR/includes"
             ],
             "defines": [],
             "macFrameworkPath": [

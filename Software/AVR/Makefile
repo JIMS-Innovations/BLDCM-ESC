@@ -6,7 +6,9 @@
 MODE = c
 
 # Source files 
-SOURCES_C	= 	./src/main.c
+SOURCES_C	= 	./src/main.c\
+				./src/uart.c\
+				./src/commutation.c
 
 # SOURCES_CPP	= 	./src/main.cpp
 				

@@ -95,30 +95,5 @@
 #define USART_BAUDRATE 9600 /* Set baud rate here */
 #define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)	
 
-/* Function protypes */
-void commutate();
-void inv_commutate();
-void stop();
-void set_speed(uint8_t);
-
-/* Function prototypes */
-void UART_init();
-unsigned char UART_RxChar();
-void UART_TxChar(char);
-void UART_SendString(char *str);
-
-void AH_BL();
-void AH_CL();
-void BH_CL();
-void BH_AL();
-void CH_AL();
-void CH_BL();
-
-void BEMF_A_FALLING();
-void BEMF_A_RISING();
-void BEMF_B_FALLING();
-void BEMF_B_RISING();
-void BEMF_C_FALLING();
-void BEMF_C_RISING();
 
 #endif    /*__MAIN_H__*/
