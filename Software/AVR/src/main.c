@@ -40,7 +40,9 @@ ISR(ANALOG_COMP_vect)
     commutate();
     sequence++;
     sequence %= 6;
-    LED_PORT ^= _BV(WORKING_LED);
+
+    /* Turn on working LED while in closed loop mode */
+    LED_PORT ^= _BV(WORKING_LED); 
 }
 
 /* ISR function for serial RX */
@@ -63,6 +65,8 @@ int main ()
    * Pin Change interrupt for PWM Input
    * Setup selection modes -> PWM & DIRECTION
    * Pin Change interrupt for Speed control buttons
+   * Start up and shutdown using push buttons
+   * Motor presence detection
   */
 
  /**
@@ -82,9 +86,6 @@ int main ()
 
   /* Setting up Indicator LEDs */
   LED_DDR |= _BV(ERROR_LED) | _BV(WORKING_LED);
-
-  /* Turn on Indicators for test */
-  // LED_PORT |= _BV(ERROR_LED) | _BV(WORKING_LED);
 
   /*** Initialising bridge -> turn off all bridge pins ***/
 
