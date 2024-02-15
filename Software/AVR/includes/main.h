@@ -27,8 +27,8 @@
 
 /* Configuration definitions */
 #define MAX_SPEED 255
-#define MIN_SPEED 35
-#define START_SPEED 75
+#define MIN_SPEED 25 /* 35 */ 
+#define START_SPEED 30 /* 75 */
 
 /* Motor Phase Commutation sequence
     Step - 1 2 3 4 5 6

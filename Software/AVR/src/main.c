@@ -138,7 +138,7 @@ int main ()
   UART_SendString("BLDC ESC Open loop start up test\n\r");
   
   /* Open loop motor start up -> test */
-  for (int i = 2000; i > 500; i = i - 1)
+  for (int i = 1750; i > 1000; i = i - 1)
   {
     _delay_us(i);
     commutate();
